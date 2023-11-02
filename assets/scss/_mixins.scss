@@ -1,0 +1,77 @@
+@mixin media($res) {
+	@if mobile-portrait-only == $res {
+		@include media-breakpoint-down(sm) {
+			@content;
+		}
+	}
+
+	@if mobile-portrait-up == $res {
+		@include media-breakpoint-up(sm) {
+			@content;
+		}
+	}
+
+	@if mobile-landscape-only == $res {
+		@include media-breakpoint-down(md) {
+			@content;
+		}
+	}
+
+	@if mobile-landscape-up == $res {
+		@include media-breakpoint-up(md) {
+			@content;
+		}
+	}
+
+	@if tablet-portrait-only == $res {
+		@include media-breakpoint-down(lg) {
+			@content;
+		}
+	}
+
+	@if tablet-portrait-up == $res {
+		@include media-breakpoint-up(lg) {
+			@content;
+		}
+	}
+
+	@if tablet-landscape-only == $res {
+		@include media-breakpoint-down(xl) {
+			@content;
+		}
+	}
+
+	@if tablet-landscape-up == $res {
+		@include media-breakpoint-up(xl) {
+			@content;
+		}
+	}
+
+	@if laptop-only == $res {
+		@include media-breakpoint-down(xxl) {
+			@content;
+		}
+	}
+
+	@if laptop-up == $res {
+		@include media-breakpoint-up(xxl) {
+			@content;
+		}
+	}
+}
+
+/* Mixin animation for everything but minimal blog images */
+@mixin anim-regular($top, $delay:5) {
+    transform: translate3d(0, $top, 0);
+    opacity: 0;
+    transform-origin: 0 0;
+    transform: matrix(0.99939, 0, 0, 1.055, 0, 10);
+    transition-delay: 0.05s;
+    transition: transform 0.4s cubic-bezier(0.29, 0.09, 0.22, 0.98), opacity 0.4s cubic-bezier(0.29, 0.09, 0.22, 0.98);
+}
+
+@mixin anim-hover() {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
