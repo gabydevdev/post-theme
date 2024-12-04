@@ -1,13 +1,26 @@
 {
-  "name": "prepros-project",
-  "version": "1.0.0",
-  "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
-  "dependencies": {
-    "bootstrap": "^5.3.2",
-    "bourbon": "^7.3.0",
-    "uikit": "^3.17.0"
+  "name": "post-theme",
+  "version": "1.0.5",
+  "description": "A WordPress Theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "webpack": "^5.88.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabydevdev/post-theme.git"
+  },
+  "keywords": [
+    "WordPress"
+  ],
+  "author": "Gabriela",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/gabydevdev/post-theme/issues"
+  },
+  "homepage": "https://github.com/gabydevdev/post-theme#readme",
+  "dependencies": {
+    "bourbon": "^7.3.0",
+    "normalize": "^0.3.1"
   }
 }
