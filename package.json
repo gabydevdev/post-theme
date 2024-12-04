@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gabydevdev/post-theme#readme",
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "bourbon": "^7.3.0",
     "normalize": "^0.3.1"
   }
