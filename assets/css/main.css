@@ -908,6 +908,11 @@ body.html-loaded .page-background::before {
           animation: fade-in-custom 1s 1, bg-gradient-top-right 10s 1s linear infinite;
 }
 
+/*
+.site-header,
+.site-footer {
+}
+*/
 .footer-top-area, .site-header {
   display: block;
   margin-right: auto;
